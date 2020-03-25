@@ -1,0 +1,25 @@
+PushNotificationsService:
+    Db:
+        LogsConnString:
+            settings-key: PushNotificationsService-LogsConnString
+            types:
+              - AzureTableStorage
+        DataConnString:
+            settings-key: PushNotificationsService-DataConnString
+SlackNotifications:
+    AzureQueue:
+        ConnectionString:
+            settings-key: SlackNotificationsConnString
+            types:
+                - AzureTableStorage
+        QueueName:
+            settings-key: SlackQueueName
+MonitoringServiceClient:
+    MonitoringServiceUrl:
+        settings-key: MonitoringServiceUrl
+Rabbit:
+    ConnectionString:
+      settings-key: NotificationSystemRabbitMQ
+      types:
+        - RabbitMq
+
