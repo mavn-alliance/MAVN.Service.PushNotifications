@@ -22,7 +22,7 @@ namespace MAVN.Service.PushNotifications.MsSqlRepositories.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Lykke.Service.PushNotifications.Domain.PushNotificationRegistration", b =>
+            modelBuilder.Entity("MAVN.Service.PushNotifications.Domain.PushNotificationRegistration", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -47,7 +47,7 @@ namespace MAVN.Service.PushNotifications.MsSqlRepositories.Migrations
                     b.ToTable("push_notification_registrations");
                 });
 
-            modelBuilder.Entity("Lykke.Service.PushNotifications.MsSqlRepositories.Entities.NotificationMessage", b =>
+            modelBuilder.Entity("MAVN.Service.PushNotifications.MsSqlRepositories.Entities.NotificationMessage", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
