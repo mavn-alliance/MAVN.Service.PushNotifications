@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,7 +9,7 @@ using Lykke.Common.MsSql;
 using MAVN.Service.PushNotifications.Domain.Contracts;
 using MAVN.Service.PushNotifications.Domain.Repositories;
 using Microsoft.EntityFrameworkCore;
-using NotificationMessage = Lykke.Service.PushNotifications.MsSqlRepositories.Entities.NotificationMessage;
+using NotificationMessage = MAVN.Service.PushNotifications.MsSqlRepositories.Entities.NotificationMessage;
 
 namespace MAVN.Service.PushNotifications.MsSqlRepositories.Repositories
 {
