@@ -1,8 +1,8 @@
-using System;
+﻿using System;
 using Autofac;
 using AutoMapper;
 using MAVN.Service.PushNotifications.Domain.Services;
-using Falcon.Common.Encryption;
+using MAVN.Common.Encryption;
 
 namespace MAVN.Service.PushNotifications.DomainServices
 {

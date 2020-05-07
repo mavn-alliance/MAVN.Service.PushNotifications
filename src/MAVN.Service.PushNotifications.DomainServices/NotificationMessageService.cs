@@ -1,9 +1,9 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Common;
 using Common.Log;
-using Falcon.Common.Encryption;
+using MAVN.Common.Encryption;
 using Lykke.Common.Log;
 using MAVN.Service.PushNotifications.Domain.Contracts;
 using MAVN.Service.PushNotifications.Domain.Repositories;
