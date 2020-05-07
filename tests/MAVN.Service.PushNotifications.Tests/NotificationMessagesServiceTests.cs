@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Threading.Tasks;
 using AutoFixture;
-using Falcon.Common.Encryption;
+using MAVN.Common.Encryption;
 using Lykke.Logs;
 using MAVN.Service.PushNotifications.Domain.Contracts;
 using MAVN.Service.PushNotifications.Domain.Repositories;

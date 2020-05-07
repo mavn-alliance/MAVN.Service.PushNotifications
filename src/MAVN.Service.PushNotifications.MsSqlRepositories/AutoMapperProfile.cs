@@ -1,6 +1,6 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using AutoMapper;
-using Falcon.Common.Encryption;
+using MAVN.Common.Encryption;
 using MAVN.Service.PushNotifications.MsSqlRepositories.Entities;
 using Newtonsoft.Json;
 

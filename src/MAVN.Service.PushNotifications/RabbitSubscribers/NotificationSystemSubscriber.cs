@@ -1,13 +1,13 @@
-using Autofac;
+﻿using Autofac;
 using Common;
 using Lykke.Common.Log;
 using Lykke.RabbitMqBroker;
 using Lykke.RabbitMqBroker.Subscriber;
-using Lykke.Service.NotificationSystem.Contract.MessageContracts;
+using MAVN.Service.NotificationSystem.Contract.MessageContracts;
 using System;
 using System.Threading.Tasks;
 using Common.Log;
-using Lykke.Service.NotificationSystem.Contract.Enums;
+using MAVN.Service.NotificationSystem.Contract.Enums;
 using MAVN.Service.PushNotifications.Domain.Services;
 
 namespace MAVN.Service.PushNotifications.RabbitSubscribers
