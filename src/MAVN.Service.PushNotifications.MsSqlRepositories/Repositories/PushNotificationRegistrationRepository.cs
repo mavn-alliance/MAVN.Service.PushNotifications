@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Lykke.Common.MsSql;
+using MAVN.Common.MsSql;
 using MAVN.Service.PushNotifications.Domain;
 using MAVN.Service.PushNotifications.Domain.Enums;
 using MAVN.Service.PushNotifications.Domain.Repositories;
