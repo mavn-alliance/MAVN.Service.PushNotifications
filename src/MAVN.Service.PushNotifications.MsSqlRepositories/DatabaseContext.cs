@@ -1,6 +1,6 @@
 using System.Data.Common;
 using JetBrains.Annotations;
-using Lykke.Common.MsSql;
+using MAVN.Common.MsSql;
 using MAVN.Service.PushNotifications.Domain;
 using MAVN.Service.PushNotifications.MsSqlRepositories.Entities;
 using MAVN.Service.PushNotifications.MsSqlRepositories.EntityConfigurations;
