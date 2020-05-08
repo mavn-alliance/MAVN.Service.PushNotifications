@@ -5,8 +5,8 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="9.0.0" />
-    <PackageReference Include="Falcon.Common" Version="0.2.2" />
     <PackageReference Include="FluentValidation" Version="8.6.2" />
+    <PackageReference Include="MAVN.Common" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MAVN.Service.PushNotifications.Domain\MAVN.Service.PushNotifications.Domain.csproj" />

@@ -1,7 +1,7 @@
 using System;
 using Autofac;
 using AutoMapper;
-using Falcon.Common.Encryption;
+using MAVN.Common.Encryption;
 using Lykke.Common.MsSql;
 using MAVN.Service.PushNotifications.Domain.Repositories;
 using MAVN.Service.PushNotifications.MsSqlRepositories.Repositories;
