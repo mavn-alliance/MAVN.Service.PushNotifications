@@ -1,8 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MAVN.Common.MsSql;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.PushNotifications.Domain;
 using MAVN.Service.PushNotifications.Domain.Enums;
 using MAVN.Service.PushNotifications.Domain.Repositories;
@@ -12,9 +12,9 @@ namespace MAVN.Service.PushNotifications.MsSqlRepositories.Repositories
 {
     public class PushNotificationRegistrationRepository : IPushNotificationRegistrationRepository
     {
-        private readonly MsSqlContextFactory<DatabaseContext> _contextFactory;
+        private readonly PostgreSQLContextFactory<DatabaseContext> _contextFactory;
 
-        public PushNotificationRegistrationRepository(MsSqlContextFactory<DatabaseContext> contextFactory)
+        public PushNotificationRegistrationRepository(PostgreSQLContextFactory<DatabaseContext> contextFactory)
         {
             _contextFactory = contextFactory;
         }

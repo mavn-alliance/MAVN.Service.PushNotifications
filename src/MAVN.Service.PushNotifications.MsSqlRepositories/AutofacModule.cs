@@ -2,7 +2,7 @@
 using Autofac;
 using AutoMapper;
 using MAVN.Common.Encryption;
-using MAVN.Common.MsSql;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.PushNotifications.Domain.Repositories;
 using MAVN.Service.PushNotifications.MsSqlRepositories.Repositories;
 
@@ -21,7 +21,7 @@ namespace MAVN.Service.PushNotifications.MsSqlRepositories
         {
             builder.RegisterType<Mapper>().As<IMapper>().SingleInstance();
 
-            builder.RegisterMsSql(
+            builder.RegisterPostgreSQL(
                 _connectionString,
                 connString => new DatabaseContext(connString, false),
                 dbConn => new DatabaseContext(dbConn));
