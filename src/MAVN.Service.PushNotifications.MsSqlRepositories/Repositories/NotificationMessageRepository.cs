@@ -1,11 +1,11 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Common.Log;
 using Lykke.Common.Log;
-using MAVN.Common.MsSql;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.PushNotifications.Domain.Contracts;
 using MAVN.Service.PushNotifications.Domain.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -15,11 +15,11 @@ namespace MAVN.Service.PushNotifications.MsSqlRepositories.Repositories
 {
     public class NotificationMessageRepository : INotificationMessageRepository
     {
-        private readonly MsSqlContextFactory<DatabaseContext> _msSqlContextFactory;
+        private readonly PostgreSQLContextFactory<DatabaseContext> _msSqlContextFactory;
         private readonly IMapper _mapper;
         private readonly ILog _log;
 
-        public NotificationMessageRepository(MsSqlContextFactory<DatabaseContext> msSqlContextFactory, IMapper mapper,
+        public NotificationMessageRepository(PostgreSQLContextFactory<DatabaseContext> msSqlContextFactory, IMapper mapper,
             ILogFactory logFactory)
         {
             _msSqlContextFactory = msSqlContextFactory;

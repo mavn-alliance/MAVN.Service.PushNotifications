@@ -1,6 +1,6 @@
-using System.Data.Common;
+﻿using System.Data.Common;
 using JetBrains.Annotations;
-using MAVN.Common.MsSql;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.PushNotifications.Domain;
 using MAVN.Service.PushNotifications.MsSqlRepositories.Entities;
 using MAVN.Service.PushNotifications.MsSqlRepositories.EntityConfigurations;
@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MAVN.Service.PushNotifications.MsSqlRepositories
 {
-    public class DatabaseContext : MsSqlContext
+    public class DatabaseContext : PostgreSQLContext
     {
         private const string Schema = "push_notifications";
 
@@ -31,7 +31,7 @@ namespace MAVN.Service.PushNotifications.MsSqlRepositories
         {
         }
 
-        protected override void OnLykkeModelCreating(ModelBuilder modelBuilder)
+        protected override void OnMAVNModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new PushNotificationRegistrationConfiguration());
 

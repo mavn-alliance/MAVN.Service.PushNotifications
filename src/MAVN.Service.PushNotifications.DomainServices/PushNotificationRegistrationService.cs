@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Common.Log;
@@ -30,6 +30,8 @@ namespace MAVN.Service.PushNotifications.DomainServices
 
             if(!validationResult.IsValid)
                 throw new ArgumentException(validationResult.ToString());
+
+            data.RegistrationDate = DateTime.UtcNow;
 
             return await _pushNotificationRegistrationRepository.CreateAsync(data);
         }
